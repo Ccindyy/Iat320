@@ -16,7 +16,7 @@
 //Created 2 strips on pin 6 and 9
 Adafruit_NeoPixel strip1 = Adafruit_NeoPixel(8, 6, NEO_GRB + NEO_KHZ800);
 Adafruit_NeoPixel strip2 = Adafruit_NeoPixel(8, 9, NEO_GRB + NEO_KHZ800);
-Adafruit_NeoPixel floraStrip = Adafruit_NeoPixel(8+++, 8, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel floraStrip = Adafruit_NeoPixel(8, 8, NEO_GRB + NEO_KHZ800);
 
 
 //Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ400);
@@ -48,7 +48,7 @@ void loop() {
   colorWipe1(strip1.Color(255, 102, 255), 500); // Pink
   colorWipe2(strip2.Color(0, 255, 0), 500); // Green
 
-  colorWipe3(floraStrip.Color(255, 128, 0), 500); // Pink
+  colorWipe3(floraStrip.Color(255, 128, 0), 500); // Orange
   colorWipe1(strip1.Color(255, 128, 0), 500); // Orange
   colorWipe2(strip2.Color(50, 50, 255), 500); // White
 
